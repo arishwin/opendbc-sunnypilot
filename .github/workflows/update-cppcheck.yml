@@ -24,7 +24,7 @@ jobs:
           sed -i "s/^VERS=\".*\"/VERS=\"${{ steps.version.outputs.vers }}\"/" opendbc/safety/tests/misra/install.sh
           grep VERS opendbc/safety/tests/misra/install.sh
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@9153d834b60caba6d51c9b9510b087acf9f33f83
+        uses: peter-evans/create-pull-request@6699836a213cf8b28c4f0408a404a6ac79d4458a
         with:
           author: Vehicle Researcher <user@comma.ai>
           token: ${{ secrets.ACTIONS_CREATE_PR_PAT }}
