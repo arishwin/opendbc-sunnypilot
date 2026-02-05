@@ -22,7 +22,7 @@ jobs:
 
     # Check PR target branch
     - name: check branch
-      uses: Vankka/pr-target-branch-action@def32ec9d93514138d6ac0132ee62e120a72aed5
+      uses: Vankka/pr-target-branch-action@2b27a36678841b9dcd129188dd313c8286bd844b
       if: github.repository == 'sunnypilot/opendbc'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
