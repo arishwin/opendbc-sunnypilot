@@ -35,7 +35,7 @@ jobs:
 
     # Welcome comment
     - name: "First timers PR"
-      uses: actions/first-interaction@v1
+      uses: actions/first-interaction@v3
       if: github.event.pull_request.head.repo.full_name != 'sunnypilot/opendbc'
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
