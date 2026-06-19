@@ -23,7 +23,7 @@ testing = [
   "cffi",
   "gcovr",
   # FIXME: pytest 9.0.0 doesn't support unittest.SkipTest
-  "pytest==8.4.2",
+  "pytest==9.1.1",
   "pytest-coverage",
   "pytest-mock",
   "pytest-randomly",
